@@ -1,5 +1,5 @@
 <?php
-include "db.php";
+include "db.html";
 
 $sql = "SELECT * FROM Account";
 $result = mysqli_query($conn, $sql);
