@@ -1,5 +1,5 @@
 <?php 
-require 'db.php';
+require 'db.html';
 // retrieve all variables
 $custID = @$_POST["custID"];
 $fName = @$_POST["fName"];
