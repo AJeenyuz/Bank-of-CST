@@ -59,7 +59,7 @@ mysqli_close($conn);
   <p>
   <h2>Delete Customer Information</h2>
   
-   <form name="myform" method="post" action="delete.php" onSubmit="return checkboxchecked()">
+   <form name="myform" method="post" action="delete.html" onSubmit="return checkboxchecked()">
      <table width="40%" border="0">
      <?php
       $index=0;
@@ -71,7 +71,7 @@ mysqli_close($conn);
           $phone = $row['phone'];
           $address = $row['address'];
         echo "<tr><td width=\"25\" valign=\"top\"><input type=\"checkbox\" name=\"checkbox[]\" value=\"$index\" />";
-        echo "</td><td valign=\"bottom\"><h4><a href=\"detail.php?lName=$lName&fName=$fName\">$lName, $fName</a><h4></td></tr>";
+        echo "</td><td valign=\"bottom\"><h4><a href=\"detail.html?lName=$lName&fName=$fName\">$lName, $fName</a><h4></td></tr>";
         echo "<input type=\"hidden\" name=\"dfName[]\" value=\"$fName\" />";
         echo "<input type=\"hidden\" name=\"dlName[]\" value=\"$lName\" />";
         echo "<input type=\"hidden\" name=\"custID[]\" value=\"$custID\" />";
