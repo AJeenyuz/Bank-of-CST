@@ -1,5 +1,5 @@
 <?php 
-require 'db.php'; 
+require 'db.html'; 
 
 // delete record
 $delete = isset($_POST["delete"]) ? $_POST["delete"] : null;
